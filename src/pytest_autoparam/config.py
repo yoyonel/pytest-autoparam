@@ -6,7 +6,7 @@ from collections import UserDict
 from typing import Any, Dict, List, Union
 
 # It complains that ruamel.yaml doesn't have the object YAML, but it does.
-from ruamel.yaml import YAML  # type: ignore
+from ruamel.yaml import YAML
 from ruamel.yaml.parser import ParserError
 from ruamel.yaml.scanner import ScannerError
 
