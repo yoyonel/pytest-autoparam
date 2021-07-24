@@ -9,7 +9,6 @@ import sys
 
 from pytest_autoparam.config import Config, ConfigError
 
-
 log = logging.getLogger(__name__)
 
 

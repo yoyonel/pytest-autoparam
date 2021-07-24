@@ -1,14 +1,10 @@
 """Command line interface definition."""
 
 import click
-from pytest_autoparam import version
-from pytest_autoparam.entrypoints import (
-    load_config,
-    load_logger,
-)
-
-
 from click.core import Context
+
+from pytest_autoparam import version
+from pytest_autoparam.entrypoints import load_config, load_logger
 
 
 @click.group()

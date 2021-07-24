@@ -1,14 +1,13 @@
 """Store the classes and fixtures used throughout the tests."""
-from _pytest.tmpdir import TempdirFactory
-import pytest
-
 from shutil import copyfile
+
+import pytest
 
 from pytest_autoparam.config import Config
 
 
 @pytest.fixture(name="config")
-def fixture_config(tmpdir_factory: TempdirFactory) -> Config:
+def fixture_config(tmpdir_factory) -> Config:
     """Configure the Config object for the tests."""
     data = tmpdir_factory.mktemp("data")
     config_file = str(data.join("config.yaml"))

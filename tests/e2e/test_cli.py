@@ -7,10 +7,10 @@ import pytest
 from _pytest.logging import LogCaptureFixture
 from click.testing import CliRunner
 from py._path.local import LocalPath
+
 from pytest_autoparam.config import Config
 from pytest_autoparam.entrypoints.cli import cli
 from pytest_autoparam.version import __version__
-
 
 log = logging.getLogger(__name__)
 
