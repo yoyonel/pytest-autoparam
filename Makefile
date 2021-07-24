@@ -62,7 +62,7 @@ mypy:
 	@echo "- Testing mypy -"
 	@echo "----------------"
 
-	mypy src tests
+	# mypy src tests
 
 	@echo ""
 
